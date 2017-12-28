@@ -375,48 +375,6 @@
                 <input type="text" class="form-control form-control-min" name="certifications_num"  [ngModel]="certificateListData.certifications_num" required>
               </div>
 
-<!--               <div class="form-group form-group-min" *ngIf="disableFields">
-                <p class="mb-1"><strong>Select an Education Level</strong></p>
-                <select class="form-control form-control-min" name="education_level" [ngModel]="certificateListData.education_level" required>
-                  <option value="" >Select</option>
-                  <option value="High School/GED">High School/GED</option>
-                  <option value="Bachelor's Degree">Bachelor's Degree</option>
-                  <option value="Master's Degree">Master's Degree</option>
-                  <option value="Advanced Graduate">Advanced Graduate</option>
-                </select>
-              </div>
-              <div class="form-group form-group-min">
-                <p class="mb-1"><strong>Where did you go to school?</strong></p>
-                <input type="text" class="form-control form-control-min" name="school" [ngModel]="certificateListData.school" required>
-              </div>
-              <div class="form-group form-group-min">
-                <p class="mb-1"><strong>What did you study?</strong></p>
-                <input type="text" class="form-control form-control-min" name="specialization" [ngModel]="certificateListData.specialization" required>
-              </div>
-              <p class="mb-1"><strong>From</strong></p>
-              <div class="row">
-                <div class="col-sm-auto has-control">
-                  <div class="form-group form-group-min">
-                  <my-date-picker name="eductionYear"  [options]="myDatePickerOptionsfromyear" 
-                    [(ngModel)]="from_year"  (dateChanged)="limitDate($event)" required></my-date-picker>
-                  </div>
-                </div>
-                <div class="col-sm-auto py-sm-2 pb-2 pt-sm-0"><strong>To</strong></div>
-                <div class="col-sm-auto has-control" *ngIf="!certificateListData.present">
-                  <div class="form-group form-group-min">
-                    <my-date-picker name="toEduction" [options]="myDatePickerOptionstoyear"
-                    [(ngModel)]="to_year" required></my-date-picker>
-
-                  </div>
-                </div>
-              </div>
-              <div class="form-group form-group-min">
-                <label class="checkbox-group radio-group-row">
-                  <input type="checkbox" name="present" [(ngModel)]="certificateListData.present">
-                  <span class="switch"></span>
-                  <span class="checkbox-title"><strong>Present</strong></span>
-                </label>
-              </div> -->
               <div class="row justify-content-end">
                 <div class="col-sm-auto">
                   <button type="button" class="btn btn-min btn-block btn-dark mb-3" data-dismiss="modal">Cancel</button>
@@ -440,7 +398,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 
-            <!-- <div class="text-center fz-20"><strong>Looks like your are missing some information</strong></div> -->
+         
             <div class="text-center fz-20 red"><strong>Please fill information in below fields, without it you can't access another area of profile.</strong></div>
             <p class="text-center fz-16 gray semibold">We use information to give you a better experience on Starperformers.</p>
             
